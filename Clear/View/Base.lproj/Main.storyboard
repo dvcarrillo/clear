@@ -21,7 +21,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YPu-gN-gMv" userLabel="currentWeatherView">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="281"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunny" translatesAutoresizingMaskIntoConstraints="NO" id="YHd-oh-m4d" userLabel="conditionBackground">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_sunny" translatesAutoresizingMaskIntoConstraints="NO" id="YHd-oh-m4d" userLabel="conditionBackground">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="281"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="21º" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flJ-fN-fC2" userLabel="temperatureLabel">
@@ -164,8 +164,8 @@
                                     <constraint firstAttribute="height" constant="122" id="DJB-5O-vK1"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="un9-Qh-ibH" userLabel="detailedWeatherView">
-                                <rect key="frame" x="16" y="289" width="343" height="190"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="un9-Qh-ibH" userLabel="detailedWeatherView">
+                                <rect key="frame" x="16" y="299" width="343" height="190"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rg2-2z-F80" userLabel="pressureView">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="47.5"/>
@@ -277,7 +277,7 @@
             </objects>
             <point key="canvasLocation" x="748" y="-322.48875562218893"/>
         </scene>
-        <!--Second-->
+        <!--Second View Controller-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Clear" customModuleProvider="target" sceneMemberID="viewController">
@@ -285,34 +285,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="87" y="312" width="201" height="43"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxh-gN-8au" userLabel="cityLabel">
+                                <rect key="frame" x="18" y="61" width="349" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="80" y="363" width="215" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="City name" translatesAutoresizingMaskIntoConstraints="NO" id="tib-MQ-4i2">
+                                <rect key="frame" x="7" y="111" width="361" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                            <constraint firstItem="tib-MQ-4i2" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="7" id="G0w-ch-HOx"/>
+                            <constraint firstItem="tib-MQ-4i2" firstAttribute="top" secondItem="wxh-gN-8au" secondAttribute="bottom" constant="9" id="Hd7-iZ-FMx"/>
+                            <constraint firstItem="wxh-gN-8au" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="18" id="mWz-CH-B9g"/>
+                            <constraint firstItem="wxh-gN-8au" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" constant="61" id="qzF-wP-KYm"/>
+                            <constraint firstAttribute="trailing" secondItem="wxh-gN-8au" secondAttribute="trailing" constant="8" id="vID-v0-ffG"/>
+                            <constraint firstAttribute="trailing" secondItem="tib-MQ-4i2" secondAttribute="trailing" constant="7" id="wXo-WK-a1z"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="360"/>
+            <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -334,8 +332,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bg_sunny" width="6000" height="4000"/>
         <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
-        <image name="sunny" width="6000" height="4000"/>
     </resources>
 </document>

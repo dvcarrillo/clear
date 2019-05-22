@@ -48,7 +48,6 @@
 				314A8AA9CFC31603D88FB1DF /* Pods-Clear.debug.xcconfig */,
 				808DE0C19EAF3EF344E7A5F9 /* Pods-Clear.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
