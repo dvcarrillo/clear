@@ -160,12 +160,11 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="90m-KB-5Lo" firstAttribute="leading" secondItem="Pea-vj-5v0" secondAttribute="trailing" constant="32" id="6A6-yf-ktb"/>
                                     <constraint firstAttribute="height" constant="122" id="DJB-5O-vK1"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="un9-Qh-ibH" userLabel="detailedWeatherView">
-                                <rect key="frame" x="16" y="299" width="343" height="190"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="un9-Qh-ibH" userLabel="detailedWeatherView">
+                                <rect key="frame" x="16" y="289" width="343" height="190"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rg2-2z-F80" userLabel="pressureView">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="47.5"/>
