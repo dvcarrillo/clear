@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		0A0C707C229697B9001CAA07 /* WeatherDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C707B229697B9001CAA07 /* WeatherDataModel.swift */; };
 		0AA3669D22857EF500F7DA91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3669C22857EF500F7DA91 /* AppDelegate.swift */; };
-		0AA3669F22857EF500F7DA91 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3669E22857EF500F7DA91 /* FirstViewController.swift */; };
-		0AA366A122857EF500F7DA91 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA366A022857EF500F7DA91 /* SecondViewController.swift */; };
+		0AA3669F22857EF500F7DA91 /* NowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3669E22857EF500F7DA91 /* NowViewController.swift */; };
+		0AA366A122857EF500F7DA91 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA366A022857EF500F7DA91 /* SearchViewController.swift */; };
 		0AA366A422857EF500F7DA91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA366A222857EF500F7DA91 /* Main.storyboard */; };
 		0AA366A622857EF700F7DA91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AA366A522857EF700F7DA91 /* Assets.xcassets */; };
 		0AA366A922857EF700F7DA91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA366A722857EF700F7DA91 /* LaunchScreen.storyboard */; };
@@ -21,8 +21,8 @@
 		0A0C707B229697B9001CAA07 /* WeatherDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataModel.swift; sourceTree = "<group>"; };
 		0AA3669922857EF500F7DA91 /* Clear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA3669C22857EF500F7DA91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0AA3669E22857EF500F7DA91 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		0AA366A022857EF500F7DA91 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		0AA3669E22857EF500F7DA91 /* NowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowViewController.swift; sourceTree = "<group>"; };
+		0AA366A022857EF500F7DA91 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		0AA366A322857EF500F7DA91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0AA366A522857EF700F7DA91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AA366A822857EF700F7DA91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,8 +65,8 @@
 			isa = PBXGroup;
 			children = (
 				0AA3669C22857EF500F7DA91 /* AppDelegate.swift */,
-				0AA3669E22857EF500F7DA91 /* FirstViewController.swift */,
-				0AA366A022857EF500F7DA91 /* SecondViewController.swift */,
+				0AA3669E22857EF500F7DA91 /* NowViewController.swift */,
+				0AA366A022857EF500F7DA91 /* SearchViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -241,9 +241,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A0C707C229697B9001CAA07 /* WeatherDataModel.swift in Sources */,
-				0AA366A122857EF500F7DA91 /* SecondViewController.swift in Sources */,
+				0AA366A122857EF500F7DA91 /* SearchViewController.swift in Sources */,
 				0AA3669D22857EF500F7DA91 /* AppDelegate.swift in Sources */,
-				0AA3669F22857EF500F7DA91 /* FirstViewController.swift in Sources */,
+				0AA3669F22857EF500F7DA91 /* NowViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
