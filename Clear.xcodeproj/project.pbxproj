@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A0C707C229697B9001CAA07 /* WeatherDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C707B229697B9001CAA07 /* WeatherDataModel.swift */; };
 		0AA3669D22857EF500F7DA91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3669C22857EF500F7DA91 /* AppDelegate.swift */; };
 		0AA3669F22857EF500F7DA91 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3669E22857EF500F7DA91 /* FirstViewController.swift */; };
 		0AA366A122857EF500F7DA91 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA366A022857EF500F7DA91 /* SecondViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A0C707B229697B9001CAA07 /* WeatherDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataModel.swift; sourceTree = "<group>"; };
 		0AA3669922857EF500F7DA91 /* Clear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA3669C22857EF500F7DA91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AA3669E22857EF500F7DA91 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 		0A8E0581228958B30077290C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0A0C707B229697B9001CAA07 /* WeatherDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A0C707C229697B9001CAA07 /* WeatherDataModel.swift in Sources */,
 				0AA366A122857EF500F7DA91 /* SecondViewController.swift in Sources */,
 				0AA3669D22857EF500F7DA91 /* AppDelegate.swift in Sources */,
 				0AA3669F22857EF500F7DA91 /* FirstViewController.swift in Sources */,

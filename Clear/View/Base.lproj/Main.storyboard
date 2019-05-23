@@ -21,7 +21,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YPu-gN-gMv" userLabel="currentWeatherView">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="281"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_sunny" translatesAutoresizingMaskIntoConstraints="NO" id="YHd-oh-m4d" userLabel="conditionBackground">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_cloudy" translatesAutoresizingMaskIntoConstraints="NO" id="YHd-oh-m4d" userLabel="conditionBackground">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="281"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="21º" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flJ-fN-fC2" userLabel="temperatureLabel">
@@ -45,7 +45,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sunny" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YgQ-D0-ZZi" userLabel="conditionLabel">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cloudy" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YgQ-D0-ZZi" userLabel="conditionLabel">
                                         <rect key="frame" x="176" y="220" width="184" height="33"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
@@ -68,7 +68,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pea-vj-5v0" userLabel="forecastDay1">
                                         <rect key="frame" x="0.0" y="0.0" width="93" height="122"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U8p-jq-WZl" userLabel="conditionImage">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sunny" translatesAutoresizingMaskIntoConstraints="NO" id="U8p-jq-WZl" userLabel="conditionImage">
                                                 <rect key="frame" x="14" y="29" width="64" height="64"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -99,7 +99,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="90m-KB-5Lo" userLabel="forecastDay2">
                                         <rect key="frame" x="131" y="0.0" width="93" height="122"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="han-LL-s7H" userLabel="conditionImage">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="overcast" translatesAutoresizingMaskIntoConstraints="NO" id="han-LL-s7H" userLabel="conditionImage">
                                                 <rect key="frame" x="14" y="29" width="64" height="64"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -130,7 +130,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pVI-2Y-ell" userLabel="forecastDay3">
                                         <rect key="frame" x="262" y="0.0" width="93" height="122"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DR8-KE-xlm" userLabel="conditionImage">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="light_rain" translatesAutoresizingMaskIntoConstraints="NO" id="DR8-KE-xlm" userLabel="conditionImage">
                                                 <rect key="frame" x="14" y="29" width="64" height="64"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -332,7 +332,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bg_sunny" width="6000" height="4000"/>
+        <image name="bg_cloudy" width="5997" height="4000"/>
         <image name="first" width="30" height="30"/>
+        <image name="light_rain" width="64" height="64"/>
+        <image name="overcast" width="64" height="64"/>
+        <image name="sunny" width="64" height="64"/>
     </resources>
 </document>
