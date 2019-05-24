@@ -25,6 +25,9 @@ class WeatherDataModel {
     var weatherIconName : String = ""
     
     
+    // Designated initializer
+    init() {}
+    
     // Update the weather icon name given a condition code
     func updateWeatherIconName(condition: Int) -> String {
         switch condition {
