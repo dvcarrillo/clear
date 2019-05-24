@@ -21,7 +21,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YPu-gN-gMv" userLabel="currentWeatherView">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="281"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_cloudy" translatesAutoresizingMaskIntoConstraints="NO" id="YHd-oh-m4d" userLabel="conditionBackground">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_sunny" translatesAutoresizingMaskIntoConstraints="NO" id="YHd-oh-m4d" userLabel="conditionBackground">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="281"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="21º" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flJ-fN-fC2" userLabel="temperatureLabel">
@@ -352,7 +352,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bg_cloudy" width="5997" height="4000"/>
+        <image name="bg_sunny" width="6000" height="4000"/>
         <image name="first" width="30" height="30"/>
         <image name="light_rain" width="64" height="64"/>
         <image name="overcast" width="64" height="64"/>

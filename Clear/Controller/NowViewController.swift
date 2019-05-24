@@ -70,7 +70,7 @@ class NowViewController: UIViewController, CLLocationManagerDelegate {
             response in
             if response.result.isSuccess {
                 print("Alamofire - Response form server successful")
-                
+
                 let responseJSON : JSON = JSON(response.result.value!)
                 // TODO: Call functions to process the response
             }
@@ -80,15 +80,27 @@ class NowViewController: UIViewController, CLLocationManagerDelegate {
             }
         }
     }
-    
+        
     // MARK: - Location Manager delegate methods
     /************************************************************************/
     
     // Executed after location update
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location = locations[locations.count - 1]    // Get the latest location
-        if location.horizontalAccuracy {
+        if location.horizontalAccuracy > 0 {
+            locationManager.stopUpdatingLocation()
+            locationManager.delegate = nil
             
+            // TODO: Remove prints
+            print("longitude = \(location.coordinate.longitude), latitude = \(location.coordinate.latitude)")
+            
+            let longitude = String(location.coordinate.longitude)
+            let latitude = String(location.coordinate.latitude)
+            
+            let params : [String : String] = ["lat" : latitude, "lon" : longitude, "appid" : API_KEY]
+            getData(from: WEATHER_NOW_URL, parameters: params)
+            
+            // TODO: Get weather forecast data
         }
     }
 
