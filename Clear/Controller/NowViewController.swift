@@ -16,7 +16,7 @@ class NowViewController: UIViewController, CLLocationManagerDelegate {
     // Weather services constants
     let API_KEY = "fcd47afc48625799d8f94e94495690f0"
     let WEATHER_NOW_URL = "http://api.openweathermap.org/data/2.5/weather"
-    let WEATHER_FORECAST_URL = "api.openweathermap.org/data/2.5/forecast/daily"
+    let WEATHER_FORECAST_URL = "http://api.openweathermap.org/data/2.5/forecast"
     
     let locationManager = CLLocationManager()
     let weatherDataModel = WeatherDataModel()
@@ -97,10 +97,13 @@ class NowViewController: UIViewController, CLLocationManagerDelegate {
             let longitude = String(location.coordinate.longitude)
             let latitude = String(location.coordinate.latitude)
             
-            let params : [String : String] = ["lat" : latitude, "lon" : longitude, "appid" : API_KEY]
-            getData(from: WEATHER_NOW_URL, parameters: params)
+            let params_now : [String : String] = ["lat" : latitude, "lon" : longitude, "appid" : API_KEY]
+            let params_forecast : [String : String] = ["lat" : latitude, "lon" : longitude, "appid" : API_KEY]
             
-            // TODO: Get weather forecast data
+            getData(from: WEATHER_NOW_URL, parameters: params_now)
+            getData(from: WEATHER_FORECAST_URL, parameters: params_forecast)
+            
+            // TODO: Update UI here?
         }
     }
 
