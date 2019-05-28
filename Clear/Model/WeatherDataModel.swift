@@ -13,16 +13,21 @@ class WeatherDataModel {
     var cityName : String = ""
     
     var currentTemperature : Int = 0    // Degrees
-    var condition : String = ""
+    var conditionId : Int = 0
+    var conditionDescription : String = ""
     var minTemperature : Int = 0        // Degrees
     var maxTemperature : Int = 0        // Degrees
     var pressure : Int = 0              // hPa
+    var humidity : Int = 0              // %
     var wind : Float = 0.0              // m/s
     var windDirection : String = "N"    // N/S/W/E…
-    var rainOneHour : Int = 0           // mm during last hour
-    var rainThreeHours : Int = 0        // mm during last 3 hours
+    
+    var sunriseTime : String = "00:00 AM"
+    var sunsetTime : String = "00:00 AM"
+    var sunTimes : String = ""          // Sunrise + sunset
     
     var weatherIconName : String = ""
+    var weatherBackgroundName : String = ""
     
     
     // Designated initializer
@@ -67,6 +72,52 @@ class WeatherDataModel {
         default:
             return "dunno"
         }
+    }
+    
+    // Update the weather background name given a condition code
+    func updateWeatherBackgroundName(condition: Int) -> String {
+        switch condition {
+        case 0...300:
+            return "bg_rain"
+            
+        case 301...500:
+            return "bg_rain"
+            
+        case 501...600:
+            return "bg_rain"
+            
+        case 601...700:
+            return "bg_snow"
+            
+        case 701...771:
+            return "bg_cloudy"
+            
+        case 772...779:
+            return "bg_rain"
+            
+        case 800:
+            return "bg_sunny"
+            
+        case 801...804:
+            return "bg_cloudy"
+            
+        case 900...903, 905...1000:
+            return "bg_rain"
+            
+        case 903:
+            return "bg_snow"
+            
+        case 904:
+            return "bg_sunny"
+            
+        default:
+            return "bg_sunny"
+        }
+    }
+    
+    // Update the sun times string according to sunrise and sunset times
+    func updateSunTimes() {
+        sunTimes = "↑ \(sunriseTime) / ↓ \(sunsetTime)"
     }
     
 }
