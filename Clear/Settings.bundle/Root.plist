@@ -10,7 +10,7 @@
 			<key>Type</key>
 			<string>PSMultiValueSpecifier</string>
 			<key>Title</key>
-			<string>Temperature unit</string>
+			<string>Temperature Unit</string>
 			<key>Key</key>
 			<string>temperatureUnit</string>
 			<key>DefaultValue</key>

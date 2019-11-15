@@ -53,6 +53,9 @@ class NowViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print("Selected unit: \(UserDefaults.value(forKey: "temperatureUnit"))")
+        
         // Location manager set up
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
